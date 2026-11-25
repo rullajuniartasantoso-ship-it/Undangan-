@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Andi & Siti</title>
+
+  <!-- Menghubungkan CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Menghubungkan JavaScript -->
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- COVER -->
+  <section class="cover" id="cover">
+    <div class="cover-content">
+      <p>The Wedding Of</p>
+      <h1>Andi & Siti</h1>
+      <p>Minggu, 20 Desember 2026</p>
+
+      <button type="button" id="openInvitation">
+        Buka Undangan
+      </button>
+    </div>
+  </section>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#couple">Mempelai</a>
+    <a href="#event">Acara</a>
+    <a href="#gallery">Galeri</a>
+    <a href="#rsvp">RSVP</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="fade-up">
+      <p>The Wedding Of</p>
+      <h1>Andi & Siti</h1>
+      <p>20 Desember 2026</p>
+    </div>
+  </section>
+
+  <!-- MEMPELAI -->
+  <section class="section couple" id="couple">
+    <div class="fade-up">
+      <h2>Mempelai</h2>
+      <p>
+        Dengan penuh rasa syukur, kami mengundang
+        Anda untuk hadir di hari bahagia kami.
+      </p>
+    </div>
+
+    <div class="couple-container fade-up">
+      <div class="person">
+        <h3>Andi</h3>
+        <p>Putra dari Bapak ... dan Ibu ...</p>
+      </div>
+
+      <div class="person">
+        <h3>Siti</h3>
+        <p>Putri dari Bapak ... dan Ibu ...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote fade-up">
+    <p>
+      "Dan di antara tanda-tanda kekuasaan-Nya ialah
+      Dia menciptakan pasangan-pasangan untukmu."
+    </p>
+    <p>QS. Ar-Rum: 21</p>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="section countdown-section">
+    <h2>Menuju Hari Bahagia</h2>
+
+    <div class="countdown">
+      <div class="countdown-item">
+        <span id="days">0</span>
+        <p>Hari</p>
+      </div>
+
+      <div class="countdown-item">
+        <span id="hours">0</span>
+        <p>Jam</p>
+      </div>
+
+      <div class="countdown-item">
+        <span id="minutes">0</span>
+        <p>Menit</p>
+      </div>
+
+      <div class="countdown-item">
+        <span id="seconds">0</span>
+        <p>Detik</p>
+      </div>
+    </div>
+
+    <p id="countdownMessage"></p>
+  </section>
+
+  <!-- ACARA -->
+  <section class="section" id="event">
+    <h2>Detail Acara</h2>
+
+    <div class="event-container fade-up">
+      <div class="event-card">
+        <h3>Akad Nikah</h3>
+        <p>Minggu, 20 Desember 2026</p>
+        <p>Pukul 08.00 WIB</p>
+        <p>Lokasi: Isi alamat acara</p>
+      </div>
+
+      <div class="event-card">
+        <h3>Resepsi</h3>
+        <p>Minggu, 20 Desember 2026</p>
+        <p>Pukul 11.00 WIB</p>
+        <p>Lokasi: Isi alamat acara</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="section" id="gallery">
+    <h2>Galeri Kami</h2>
+
+    <div class="gallery-container fade-up">
+      <img src="https://placehold.co/400x300?text=Foto+1"
+           alt="Foto Andi dan Siti 1">
+
+      <img src="https://placehold.co/400x300?text=Foto+2"
+           alt="Foto Andi dan Siti 2">
+
+      <img src="https://placehold.co/400x300?text=Foto+3"
+           alt="Foto Andi dan Siti 3">
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="section" id="rsvp">
+    <h2>Konfirmasi Kehadiran</h2>
+
+    <form id="rsvpForm" class="rsvp-form">
+      <label for="guestName">Nama</label>
+      <input
+        type="text"
+        id="guestName"
+        placeholder="Masukkan nama Anda"
+        required
+      >
+
+      <label for="attendance">Konfirmasi Kehadiran</label>
+      <select id="attendance" required>
+        <option value="">Pilih jawaban</option>
+        <option value="Hadir">Hadir</option>
+        <option value="Tidak Hadir">Tidak Hadir</option>
+      </select>
+
+      <label for="message">Ucapan dan Doa</label>
+      <textarea
+        id="message"
+        placeholder="Tuliskan ucapan dan doa"
+        rows="4"
+      ></textarea>
+
+      <button type="submit">Kirim RSVP</button>
+    </form>
+  </section>
+
+  <!-- HADIAH -->
+  <section class="section gift">
+    <h2>Hadiah Pernikahan</h2>
+    <p>Doa restu Anda merupakan hadiah terindah bagi kami.</p>
+
+    <div class="gift-card">
+      <p>Bank: Nama Bank</p>
+      <p>Nomor Rekening:</p>
+
+      <strong id="accountNumber">1234567890</strong>
+
+      <button type="button" id="copyAccount">
+        Salin Nomor Rekening
+      </button>
+
+      <p id="copyMessage" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <h2>Andi & Siti</h2>
+    <p>Terima kasih atas doa dan kehadiran Anda.</p>
+    <p>20 Desember 2026</p>
+  </footer>
+
+</body>
+</html>
